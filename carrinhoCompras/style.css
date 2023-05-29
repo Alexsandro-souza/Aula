@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: rgba(25, 58, 25, 0.743);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+h4{
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.cadastrar{
+    display: flex;    
+    padding-bottom: 8px;
+    border-bottom: 2px solid gray;
+    
+    justify-content: space-between;
+}
+
+.cadastrar .cadsProd{
+    margin-left: 25px;
+} 
+.cadastrar input[type=text]{
+    height: 20px;
+    line-height: 20px;
+    width: 250px;
+}
+
+.cadsPreco input[type=text]{
+    width: 100px;
+  
+}
+
+.cadastrar input[type=submit]{
+    background-color: rgba(25, 58, 25, 0.48);
+    border: none;
+    border-radius: 3px;
+    padding: 2px 3px;
+    color: white;
+    margin-right: 25px;
+    cursor: pointer;
+    
+}
+
+.cadastrado{
+
+margin-top: 27px;
+
+}
+
+.cadastrado .containerCadast{
+    display: flex;
+    margin-top: 15px;
+    border-bottom:1px solid gray; ;
+    justify-content: space-around;
+}
+.cadastrado input[type=button]{
+    border: 0;
+    background-color: rgba(170, 47, 47, 0.78);
+    color: white;
+    font-size: 13px;
+    font-weight: 200;
+    border-radius: 3px;
+    padding: 0 3px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+#success{
+    background-color: rgba(70, 189, 70, 0.7);
+    color: white;
+    height: 25px;
+    line-height: 25px;
+    position: fixed;
+    display: none;
+    padding-left: 13px;
+
+    width: 100%;
+    justify-content: right;
+
+}
