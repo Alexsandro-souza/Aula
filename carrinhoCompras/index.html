@@ -8,27 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Carrinho de compras</h1>
-    <h4>Cadastre abaixo seu itens</h4>
-    <div class="cadastrar">
-        <div class="cadsProd">
-            <label for="produto">Produto</label>
-            <input type="text" name="produto" id="produto" value="">
-        </div><!--cadsProd-->
-        
-        <div class="cadsPreco">
-            <label for="preco">Preço</label>
-            <input type="text" name="preco" id="preco">
-        </div><!--cadsPreco-->
-        <input type="submit" value="Cadastrar">
-    </div><!--cadastrar-->
-    <p id="success">Cadastro realizado com sucesso</p>
-    <div class="cadastrado">
-        <!--Conteúdo preenchido dinamicamente-->
-    </div><!--cadastrado-->
-    <div class="total">
-        <h3 id="total"></h3>
-    </div>
+    <h1 class="center">Carrinho de compras</h1>
+    <div class="container center">
+
+        <h4>Cadastre abaixo seu itens</h4>
+        <div class="cadastrar">
+            <div class="cadsProd">
+                <label for="produto">Produto</label>
+                <input type="text" name="produto" id="produto">
+            </div><!--cadsProd-->
+            
+            <div class="cadsPreco">
+                <label for="preco">Preço</label>
+                <input type="text" name="preco" id="preco">
+            </div><!--cadsPreco-->
+            <input type="submit" value="Cadastrar">
+        </div><!--cadastrar-->
+        <p class="container" id="success">Cadastro realizado com sucesso</p>
+        <div class="cadastrado">
+            <!--Conteúdo preenchido dinamicamente-->
+        </div><!--cadastrado-->
+        <div>
+            <h3 id="total"></h3>
+        </div>
+    </div><!--container-->
     <script src="script.js"></script>
 </body>
 </html>

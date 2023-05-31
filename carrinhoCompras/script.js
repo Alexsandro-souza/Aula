@@ -17,73 +17,69 @@ produto.focus();
 
 
 // Funções
-btnCadas.addEventListener('click',()=>{
+btnCadas.addEventListener('click', () => {
     let produtoV = produto.value
     let precoV = preco.value
-    
-    
-    
-    if(produto.value !== '' && preco.value !== ''){
+
+
+
+    if (produto.value !== '' && preco.value !== '') {
 
         miniBanco.push(
             {
-                produto : produtoV,
-                preco : precoV
+                produto: produtoV,
+                preco: precoV
             });
 
-        cadastrado.innerHTML = "";        
-        let soma = 0;  
-        
-        miniBanco.map((cadastros)=>{
+        cadastrado.innerHTML = "";
+
+        let soma = 0;
+
+        miniBanco.map((cadastros) => {
             soma = soma + parseFloat(cadastros.preco);
-            cadastrado.innerHTML +=`
+            cadastrado.innerHTML += `
             <div class="containerCadast">
-            <h3 class="produtoCdas">`+cadastros.produto+`</h3>
-            <h3 class="precoCdas" > R$ `+cadastros.preco+`</h3>
+            <h3 class="produtoCdas">`+ cadastros.produto + `</h3>
+            <h3 class="precoCdas" >R$ `+ cadastros.preco + `</h3>
             <input type="button" class="deletar" value="Deletar">
             </div>`
             total.innerText = `Total R$ ${soma}`;
         })
-        
+        produto.value = "";
+        preco.value = "";
+        produto.focus();
 
-            // console.log(del)
-        
-            
-        // Limpa o input e dá foco input produto
-
-            produto.value = "";
-            preco.value = "";
-            produto.focus();
-            
-            
-        
-        // mensagem de sucesso para o usuário
-        msSucesso.style.display='block';
+        msSucesso.style.display = 'block';
         setTimeout(() => {
-            msSucesso.style.display='none';
+            msSucesso.style.display = 'none';
         }, 1000);
-        
-        
 
-    }else{
+
+
+    } else {
         alert('Digite o produto e o valor para realizar o cadastro!')
     }
 
 })
-        document.addEventListener('click',(e)=>{
-            const elemento = e.target; //o target permite ver o elemento
-            const elPai = elemento.parentNode; //essa proriedade mostra quem é o elemento pai
 
-            if(elemento.classList.contains('deletar')){
-                elPai.remove();
-            }
-            
-        })
-                
-    
 
-    // let del = document.getElementById('deletar')
-    // console.log(del)
+
+const deletando = document.addEventListener('click', (e) => {
+    const elemento = e.target; //o target permite ver o elemento
+    const elPai = elemento.parentNode; //essa proriedade mostra quem é o elemento pai
+    if (elemento.classList.contains('deletar')) {
+        elPai.remove();
+    }
+})
+
+/*
+    Todo
+    Decrementar valor da variável soma após o removação de um item da lista
+
+*/ 
+
+
+
 
 
 

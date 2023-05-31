@@ -3,7 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+body, html{
+    max-width: 100%;
+}
 
+.container{
+    max-width: 1024px;
+}
+.center{
+    margin: 0 auto;
+}
 h1{
     background-color: rgba(25, 58, 25, 0.743);
     color: white;
@@ -46,6 +55,8 @@ h4{
     color: white;
     margin-right: 25px;
     cursor: pointer;
+    max-height: 20px;
+    
     
 }
 
@@ -92,4 +103,64 @@ margin-top: 27px;
 }
 .total h3{
     margin-left: 10px;
+}
+@media screen and (max-width: 559px) { .cadastrar input[type=submit]{        
+    
+    margin-top: 18px;
+          
+}}
+
+@media screen and (max-width: 409px) { .cadastrar input[type=submit]{        
+    
+    margin-top: 18px;
+          
+}}
+@media screen and (max-width: 440px) {
+
+    .cadastrar .cadsProd{
+        margin-left: 5px;
+    } 
+    .cadastrar input[type=text]{
+
+        width: 150px;
+    }
+    
+    .cadsPreco input[type=text]{
+        margin-left: 5px;
+        width: 80px;
+      
+    }
+    .cadastrar input[type=submit]{       
+        
+        margin-right: 10px;
+        
+              
+    }
+  
+}
+
+@media screen and (max-width: 320px) {
+
+    .cadsPreco {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .cadsPreco label{
+        margin-right: 10px;
+    }
+
+    .cadastrar {
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+    .cadastrar input[type=submit]{       
+        margin-top: 25px;
+        margin-right: 10px;
+        
+              
+    }
+
+  
 }
