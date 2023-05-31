@@ -86,3 +86,10 @@ margin-top: 27px;
     justify-content: right;
 
 }
+
+.total{
+    background-color: rgba(209, 205, 205, 0.745);
+}
+.total h3{
+    margin-left: 10px;
+}
